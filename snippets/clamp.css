@@ -1,0 +1,12 @@
+// Did you know that you can make your typography responsive without using a media query?
+
+h1 {
+  font-size: clamp(2rem, 8vw, 4rem);
+}
+// The clamp function takes three arguments:
+
+// A minimum value: 2rem - This means the font-size won’t go below 2 times the root element’s font-size, 32px (assuming the root element’s font-size is 16px).
+
+// A preferred value: 8vw - This sets the preferred font-size to 8% of the viewport width. As the viewport width changes, the font-size will scale accordingly.
+
+// A maximum value: 4rem - This sets the maximum font-size to 4 times the root element’s font-size (64px).
